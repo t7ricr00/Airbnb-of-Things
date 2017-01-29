@@ -1,0 +1,80 @@
+.error{
+color: red;
+padding: 2px;
+text-align: left;
+margin-left: 100px;
+margin-top: 50px;
+display: none;
+height: 70px;
+width: 400px;
+float: left;
+}
+
+* {box-sizing: border-box;}
+ul {
+  background-color: #000000;
+}
+li a:hover {
+  background-color: #0cf72a;
+}
+.word-container {
+  width: 500px;
+  height: 50px;
+  margin: 80px auto auto;
+}
+.word-container h1 {
+  margin: 0;
+  text-align: center;
+  color: #ab0a0a;
+}
+.register-container {
+  width: 600px;
+  margin: 20px auto auto;
+  border: 1px solid #000;
+  padding: 20px;
+}
+label {
+  display: block;
+}
+.name::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.name label:first-child {
+  margin-right: 20px;
+}
+.name label {
+  width: calc(100% / 2 - 10px);
+  float: left;
+}
+input, [type="submit"] {
+  padding: 8px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+[type="submit"] {
+  border: 1px solid #000000;
+  color: #ffffff;
+  background-color: #ab0a0a;
+  margin: 0;
+}
+[type="submit"]:hover {
+  background-color: red;
+}
+
+
+.noBullets{
+      list-style:none;
+    padding:auto;
+  }
+    
+  #last-footer h5{
+    text-align:center;
+  }
+  .footlinks li a{
+  text-align:center;
+  margin-left:5px ;
+  }
+  .subscribe li{padding:3px;}
+
