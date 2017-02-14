@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<title>Welcome to ProPlay</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="css/contact.css" type="text/css" media="all" />
+	<!-- JS -->
+	<script src="js/jquery-1.4.1.min.js" type="text/javascript"></script>	
+	<script src="js/jquery.jcarousel.pack.js" type="text/javascript"></script>	
+	<script src="js/jquery-func.js" type="text/javascript"></script>
+        <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+	<!-- End JS -->
+	
+    </head>
+    <body>
+     <div id="content">
+
+                    <div id="contact-form">
+                        <div>
+                            <h1>Contact Us</h1> <br>
+                                <h4>We are happy to help you. Get your questions here.</h4> 
+                        </div>
+                        <p id="failure">Oopsie...message not sent.</p>  
+                        <p id="success">Your message was sent successfully. Thank you!</p>
+
+                        <form method="post" action="/">
+                            <div>
+                                <label for="name">
+                                    <span class="required">Name: *</span> 
+                                    <input type="text" id="name" name="name" value="" placeholder="Your Name" required="required" tabindex="1" autofocus="autofocus" />
+                                </label> 
+                            </div>
+                            <div>
+                                <label for="email">
+                                    <span class="required">Email: *</span>
+                                    <input type="email" id="email" name="email" value="" placeholder="Your Email" tabindex="2" required="required" />
+                                </label>  
+                            </div>
+                            <div>		          
+                                <label for="subject">
+                                    <span style="color:#fff;">Subject: </span>
+                                    <select id="subject" name="subject" tabindex="4">   
+                                        <option value="selection">--Select the subject--</option>
+                                        <option value="price">Price</option>  
+                                        <option value="availability">Product availability</option>
+                                        <option value="availability">Orders</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div>		          
+                                <label for="message">
+                                    <span class="required">Message: *</span> 
+                                    <textarea id="message" name="message" placeholder="Please write your message here." tabindex="5" required="required"></textarea> 
+                                </label>  
+                            </div>
+                            <div>		           
+                                <button name="submit" type="submit" id="submit" >SEND</button> 
+                            </div>
+                        </form>
+
+                    </div>
+
+                    
+
+                </div>
+    	
+    </body>
+    </html>
