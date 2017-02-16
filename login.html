@@ -6,21 +6,25 @@
 	<script href="airbnb.js" type="text/javascript"></script>
 </head>
 <body>
+<fieldset><legend>Login</legend>
+    <form id="login_form" method="post" action="login.php">
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" />
 
-<form id="login_form" method="post" action="login.php">
-    <fieldset><legend>Login</legend>
-    <label for="email">Email</label>
-    <input type="text" name="email" id="email" />
+        <br/>
 
-    <br/>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" />
 
-    <label for="password">Password</label>
-    <input type="password" name="password" id="password" />
+        <br/>
+        <input type="submit" name="submit" value="login" />
 
-    <br/>
-    <input type="submit" name="submit" value="login" />
-
-    </fieldset>
-</form>
+    </form>
+    <a href="airbnb.php">
+        <button>
+            Back
+        </button>
+    </a>
+</fieldset>
 </body>
 </html>

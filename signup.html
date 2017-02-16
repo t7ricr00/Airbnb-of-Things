@@ -4,12 +4,9 @@
 <head>
 <style type="text/css"></style>
 </head>
-<body>
-<div class="word-container">
-  <h1>Create your account</h1>
-</div>
 <div class="register-container">
-  <form action="" method="POST">
+<fieldset><legend>Sign Up</legend>
+  <form action="registration.php" method="POST">
     <div class="fname">
       <label>
         <input type="text" placeholder="First Name" name="fname" size="20">
@@ -20,14 +17,14 @@
         <input type="text" placeholder="Last Name" name="lname" size="20">
       </label>
     </div>
-    <div class="userid">
+    <div class="username">
       <label>
-        <input type="text" placeholder="Username" name="userid" size="50">
+        <input type="text" placeholder="Username" name="username" size="50">
       </label>
     </div>
-    <div class="pwd">
+    <div class="password">
       <label>
-        <input type="password" placeholder="Password" name="pwd" size="50">
+        <input type="password" placeholder="Password" name="password" size="50">
       </label>
     </div>
     <div class="email">
@@ -35,10 +32,34 @@
         <input type="email" placeholder="Email Address" name="email" size="50">
       </label>
     </div>
-    <div class="btn">
-      <button type="submit">Create Account</button>
+    <div class="phone">
+      <label>
+        <input type="text" placeholder="Phone" name="phone" size="50">
+      </label>
     </div>
+    <div class="zip">
+      <label>
+        <input type="number" placeholder="Zipcode" name="zipcode" size="50">
+      </label>
+    </div>
+    <div class="city">
+      <label>
+        <input type="text" placeholder="City" name="city" size="50">
+      </label>
+    </div>
+    <div class="address">
+      <label>
+        <input type="text" placeholder="Address" name="address" size="50">
+      </label>
+    </div>
+    <input type="submit" name="submit" value="Create Account" />
   </form>
+  <a href="airbnb.php">
+      <button>
+          Back
+      </button>
+  </a>
+</fieldset>
 </div>
 </body>
 </html>

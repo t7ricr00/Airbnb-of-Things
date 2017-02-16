@@ -1,3 +1,9 @@
+<?php
+include("db.php");
+session_start();
+$username = $_SESSION['login_user'];
+?>
+
 <!DOCTYPE html >
 <html>
 </div>
@@ -58,12 +64,22 @@
                     <li>
                         <a class="page-scroll" href="#">Reservation</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="login.html">login</a>
-                    </li>
-                     <li>
-                        <a class="page-scroll" href="signup.html">Sign up</a>
-                    </li>
+                    <?php
+                    if (!$_SESSION['login_user']){ ?>
+                      <li>
+                          <a class="page-scroll" href="login.html">Login</a>
+                      </li>
+                       <li>
+                          <a class="page-scroll" href="signup.html">Sign up</a>
+                      </li>
+                    <?php } else {?>
+                      <li>
+                          <a class="page-scroll" href="myitem.php">My Item</a>
+                      </li>
+                      <li>
+                          <a class="page-scroll" href="logout.php">Log Out</a>
+                      </li>
+                    <?php } ?>
                 </ul>
                 
                 <form class="navbar-form navbar-left" role="search">
