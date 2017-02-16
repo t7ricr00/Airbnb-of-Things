@@ -53,7 +53,7 @@ $username = $_SESSION['login_user'];
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="airbnb.html">Home</a>
+                        <a class="page-scroll" href="airbnb.php">Home</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#">Find Items</a>
