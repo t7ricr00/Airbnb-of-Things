@@ -1,0 +1,258 @@
+<!DOCTYPE html >
+<html>
+<head>
+
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="airbnb.css">
+<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+        
+
+    <!-- JS -->
+    <script src="js/jquery-1.4.1.min.js" type="text/javascript"></script>   
+    <script src="js/jquery.jcarousel.pack.js" type="text/javascript"></script>  
+    <script src="js/jquery-func.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <!-- End JS -->
+
+   
+</head>
+
+
+
+<body>
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="airbnb.html" style="color: rgb(0,128,128); font-family: Arial Black;"><img src="images/logo.png"  style="float:left; padding-right: 10px; margin-top: -10px;"><b>DELACO</b></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="airbnb.html"><span class="glyphicon glyphicon-home"></span></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#">Browse Items</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#">Rent Your Items</a>
+                    </li>
+                    
+                    <li>
+                        <a class="page-scroll" href="login.html">Login</a>
+                    </li>
+                     <li>
+                        <a class="page-scroll" href="signup.html">Sign up</a>
+                    </li>
+                    
+                    
+                </ul>
+
+
+                
+    <form class="navbar-form navbar-left" role="search">
+    <div class="form-group">
+        <input type="text" class="form-control" placeholder="Item">
+    </div>
+    <button type="button" class="btn btn-info">
+      <span class="glyphicon glyphicon-search"></span> Search
+    </button>
+</form>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <hr>
+<hr>
+<hr>
+<form>
+
+
+
+<div class="boxed">
+ <h3>Upload you Item</h3>
+</div>
+
+<div class="container">
+<div class="upload" style="background-color: white;">
+
+  <div class="form-group" style="margin:20px;">
+    <label class="control-label requiredField" style="margin-top: 10px;" for="name">Title<span class="asteriskField">*</span></label>
+    <input class="form-control" id="name" name="name" type="text"/>
+  </div>
+
+  <div class="form-group" style="margin:20px;"> 
+    <label class="control-label " for="discription">Product Discription</label>
+    <textarea class="form-control" cols="40" id="discription" name="discription" rows="10"></textarea>
+  </div>
+
+
+  
+  <div class="form-group" style="margin:20px;"> 
+    <label class="control-label requiredField" for="">Location</label>
+    <input class="form-control" id="location" name="location" type="text"/>
+  </div>
+  
+  <div class="form-group" style="margin:20px;"> 
+    <label class="control-label " for="contact">Contact Info</label>
+    <input class="form-control" id="contact" name="contact" type="text"/>
+  </div>
+  
+  <div class="form-group" style="margin:20px;"> 
+    <label class="control-label " for="diposit">Diposit Price (€)</label>
+    <div class="input-group">
+          <span class="input-group-btn">
+              <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                  <span class="glyphicon glyphicon-minus"></span>
+              </button>
+          </span>
+          <input type="text" name="quant[1]" class="form-control input-number" value="1">
+          <span class="input-group-btn">
+              <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                  <span class="glyphicon glyphicon-plus"></span>
+              </button>
+          </span>
+    </div>
+
+
+     <div class="form-group" style="margin-top: 20px;"> 
+    <label class="control-label " for="diposit">Price Per Day(€)</label>
+    <div class="input-group">
+          <span class="input-group-btn">
+              <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                  <span class="glyphicon glyphicon-minus"></span>
+              </button>
+          </span>
+          <input type="text" name="quant[1]" class="form-control input-number" value="1">
+          <span class="input-group-btn">
+              <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                  <span class="glyphicon glyphicon-plus"></span>
+              </button>
+          </span>
+    </div>
+    </div>
+
+
+   
+    
+    <div class="form-group" style="margin-top: 20px;">
+        <label>Upload Image</label>
+        <div class="input-group">
+            
+                <span class="btn btn-default btn-file">
+                    <input type="file" id="imgInp">
+                </span>
+      
+            
+        </div>
+        
+    </div>
+
+
+  
+  
+  <div class="form-group" style="margin-top: 20px;">
+  
+    <button class="btn btn-primary " name="submit" type="submit" id="submit">Submit</button>
+  </div>
+  <div class="form-group" style="margin-top: 20px;">
+    <button class="btn btn-primary " name="back" type="Back" style="margin-bottom: 10px;">Back</button>
+  </div>
+  
+</form>  
+</div> 
+</div>  
+</div>
+   
+<hr>
+
+<footer class="text-muted well" id="last-footer">
+    <section>
+    <div class="row" style="font-size:11px;">
+    <div class="container">
+    <h3 class="subhead" style="text-align:center;">Thanks for visiting our website</h3>
+
+      <div class="col-md-9">
+      <div class="row" >
+      <div class="col-md-3">
+      <div class="row footlinks">
+      <div class="col-xs-12">
+      <button type="button" class="btn btn-info"><a href="aboutus.html" style="color: white"><h5>About US</h5></a></button>
+      </div>
+      </div>
+      </div>
+      
+      <div class="col-md-3">
+      <div class="row footlinks">
+      <div class="col-xs-12">
+      <button type="button" class="btn btn-info"><a href="faq.html" style="color: white"><h5>FAQs</h5></a></button>
+      </div>
+      </div>
+      </div>
+      <div class="col-md-3">
+      <div class="row footlinks">
+      <div class="col-xs-12">
+      <h5 style= "text-align: center;">Contact US</h5>
+      <h7 allign="justify">Delaco (Main office) <br>Kotkantie 1, 90250<br>Oulu, Finland</h7>
+      </div>
+      </div>
+      </div>
+      <hr/>     
+        </div><!--/.row inner--> 
+    </div>
+    
+          </ul>   
+        </form>   
+    </div>
+    </div>
+      <footer>  <div class="row">
+      <div class="container text-center">
+        <h5>All Rights Reserved © 2017.</h5>
+      </div>
+      </div></footer>
+       </div><!--/.container--> 
+       </div><!--/.row outer--> 
+    </section>
+        </footer> 
+     </div>
+  
+    
+  
+
+
+        <script src="js/bootstrap.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
+
+
